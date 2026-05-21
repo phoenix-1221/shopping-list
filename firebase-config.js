@@ -9,6 +9,3 @@ const firebaseConfig = {
   measurementId: "G-448C8QDWTH"
 };
 
-// Firebase初期化
-firebase.initializeApp(firebaseConfig);
-const db = firebase.firestore();
