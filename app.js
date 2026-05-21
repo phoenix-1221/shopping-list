@@ -94,21 +94,21 @@ function renderItems(snapshot) {
         li.prepend(checkbox);
 
 // 削除ボタン
-const deleteButton = document.createElement('button');
+	const deleteButton = document.createElement('button');
 
-deleteButton.textContent = '削除';
+	deleteButton.textContent = '削除';
 
-deleteButton.addEventListener('click', function () {
+	deleteButton.addEventListener('click', function () {
 
-    const result = confirm('この項目を削除しますか？');
+    	const result = confirm('この項目を削除しますか？');
 
-    if (result) {
-        shoppingRef.doc(doc.id).delete();
-    }
+    	if (result) {
+        	shoppingRef.doc(doc.id).delete();
+  	  }
 
-});
+	});
 
-li.appendChild(deleteButton);
+	li.appendChild(deleteButton);
 
         // 振り分け
         if (data.purchased) {
