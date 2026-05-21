@@ -71,7 +71,7 @@ li {
 }
 
 input[type="checkbox"] {
-    transform: scale(5);
+    transform: scale(3);
 }
 
 @media (max-width: 600px) {
