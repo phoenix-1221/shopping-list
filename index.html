@@ -1,0 +1,31 @@
+ <form id="itemForm">
+        <input type="text" id="itemName" placeholder="品名を入力" required>
+        <select id="store">
+            <option value="">未選択</option>
+            <option value="スーパー">スーパー</option>
+            <option value="ホムセン">ホムセン</option>
+            <option value="ドラスト">ドラスト</option>
+            <option value="百均">百均</option>
+        </select>
+        <input type="date" id="dueDate">
+        <button type="submit">追加</button>
+    </form>
+
+<label for="storeFilter">購入先で絞り込み:</label>
+<select id="storeFilter">
+    <option value="">すべて</option>
+    <option value="スーパー">スーパー</option>
+    <option value="ホムセン">ホムセン</option>
+    <option value="ドラスト">ドラスト</option>
+    <option value="百均">百均</option>
+</select>
+
+    <h2>未購入</h2>
+    <ul id="todoList"></ul>
+
+    <h2>購入済み</h2>
+    <ul id="doneList"></ul>
+
+    <script src="app.js"></script>
+</body>
+</html>
